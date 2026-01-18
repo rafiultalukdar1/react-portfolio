@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-rajdhani {
+    font-family: 'Rajdhani';
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('./assets/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('./assets/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-titillium {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --color-primary: #FDB400;
+    --color-paragraph: #FFFFFFCC;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.text-color {
+    color: var(--color-paragraph);
+}
+
+body {
+    background: #0C0C0C;
+    /* background: #111111; */
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Extra extra large devices (≥1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1324px;
+    }
+}
+
+
+/*=== Custom Button ===*/
+.custom-btn {
+  font-family: 'Titillium Web', sans-serif;
+  @apply relative px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black transition-all duration-300 hover:pl-15;
+}
+
+.custom-btn::after {
+  content: "";
+  @apply absolute top-1/2 left-5 h-px w-0 bg-black -translate-y-1/2 transition-all duration-300;
+}
+
+.custom-btn:hover::after {
+  @apply w-7.5;
+}
+
+/*=== Nav Active ===*/
+.nav-items a {
+  font-family: 'Titillium Web', sans-serif;
+  @apply text-[15px] font-semibold uppercase text-white transition-all duration-200 tracking-[1px];
+}
+
+.nav-items a:hover {
+  @apply text-[#FDB400];
+}
+
+.nav-items a.active {
+  @apply text-[#FDB400];
+}
+
+/* .menu-social a {
+
+} */
