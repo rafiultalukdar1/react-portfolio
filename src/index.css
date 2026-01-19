@@ -127,7 +127,7 @@ button {
 }
 
 /*=== Custom Button ===*/
-.custom-btn {
+/* .custom-btn {
   font-family: 'Titillium Web', sans-serif;
   @apply relative px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black transition-all duration-300 hover:pl-15;
 }
@@ -139,7 +139,30 @@ button {
 
 .custom-btn:hover::after {
   @apply w-7.5;
+} */
+
+.custom-btn {
+  font-family: 'Titillium Web', sans-serif;
+  @apply relative px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black transition-all duration-300;
 }
+
+.custom-btn::after {
+  content: "";
+  @apply absolute top-1/2 left-5 h-px w-0 bg-black -translate-y-1/2 transition-all duration-300;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .custom-btn:hover {
+    @apply pl-15;
+  }
+  .custom-btn:hover::after {
+    @apply w-7.5;
+  }
+}
+
+
+
+
 
 /*=== Nav Active ===*/
 .nav-items a {
