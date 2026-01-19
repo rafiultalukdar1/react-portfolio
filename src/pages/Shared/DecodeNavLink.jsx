@@ -36,7 +36,7 @@ const DecodeNavLink = ({ to, text }) => {
         ref.current.textContent = original;
         clearInterval(intervalRef.current);
       }
-    }, 30);
+    }, 32);
   };
 
   return (
