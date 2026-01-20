@@ -3,6 +3,13 @@
 
 @font-face {
   font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
   src: url('./assets/fonts/Rajdhani-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -91,6 +98,18 @@ button {
   margin: 0 auto;
 }
 
+.hero-separate {
+  @apply grid grid-cols-1 gap-y-7.5 sm:gap-y-10 md:gap-y-12 gap-x-2.5;
+}
+
+.hero-one {
+  @apply order-2;
+}
+
+.hero-tow {
+  @apply order-1;
+}
+
 /* Small devices (≥576px) */
 @media (min-width: 576px) {
   .container {
@@ -110,6 +129,15 @@ button {
   .container {
     max-width: 960px;
   }
+  .hero-separate {
+    @apply grid-cols-2;
+  }
+  .hero-one {
+    @apply order-1;
+  }
+  .hero-tow {
+    @apply order-2;
+  }
 }
 
 /* Extra large devices (≥1200px) */
@@ -126,21 +154,7 @@ button {
   }
 }
 
-/*=== Custom Button ===*/
-/* .custom-btn {
-  font-family: 'Titillium Web', sans-serif;
-  @apply relative px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black transition-all duration-300 hover:pl-15;
-}
-
-.custom-btn::after {
-  content: "";
-  @apply absolute top-1/2 left-5 h-px w-0 bg-black -translate-y-1/2 transition-all duration-300;
-}
-
-.custom-btn:hover::after {
-  @apply w-7.5;
-} */
-
+/*= Custom Button =*/
 .custom-btn {
   font-family: 'Titillium Web', sans-serif;
   @apply relative px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black transition-all duration-300;
@@ -160,11 +174,7 @@ button {
   }
 }
 
-
-
-
-
-/*=== Nav Active ===*/
+/*= Nav Active =*/
 .nav-items a {
   font-family: 'Titillium Web', sans-serif;
   @apply text-[15px] font-semibold uppercase text-white transition-all duration-200 tracking-[1px];
@@ -178,7 +188,7 @@ button {
   @apply text-[#FDB400];
 }
 
-/*=== Nav Social ===*/
+/*= Nav Social =*/
 .hamburger,
 .menu-social a {
   @apply relative h-11 w-11 flex justify-center items-center rounded-full text-white text-[18px] bg-[#c1c0bf1e] overflow-hidden transition-colors duration-300;
@@ -216,7 +226,7 @@ button {
   @apply relative h-10 w-10;
 }
 
-/*=== Bar ===*/
+/*= Bar =*/
 .bar {
   @apply h-10.5 w-10.5 flex flex-col justify-center items-center rounded-full bg-[#FDB400] cursor-pointer border border-[#FDB400] overflow-hidden relative;
   transition: 0.3s ease;
@@ -250,7 +260,7 @@ button {
   margin-left: 0;
 }
 
-/*=== Sidebar Heading ===*/
+/*= Sidebar Heading =*/
 .sidebar-heading h2 {
   @apply relative block cursor-default uppercase text-transparent text-[36px];
   -webkit-text-stroke: 0.5px white;
@@ -266,7 +276,7 @@ button {
   @apply w-0;
 }
 
-/*=== Menu Items ===*/
+/*= Menu Items =*/
 .menu-items a {
   @apply relative block overflow-hidden text-white uppercase font-semibold w-full text-[12px] tracking-[0.15em] z-2;
   font-family: 'Titillium Web', sans-serif;
@@ -289,7 +299,7 @@ button {
   @apply w-full;
 }
 
-/* Footer Bottom */
+/*= Footer Bottom =*/
 .footer-bottom {
   @apply py-6 text-center bg-[#141414];
   -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -298,4 +308,9 @@ button {
   mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+}
+
+/*= Typewriter =*/
+.Typewriter__cursor {
+  @apply relative top-1.75 text-[55px] lg:text-[80px] font-light;
 }
