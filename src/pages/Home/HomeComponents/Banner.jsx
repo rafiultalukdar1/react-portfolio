@@ -1,7 +1,10 @@
 import React from 'react';
+import { FaFilePdf } from 'react-icons/fa';
+import { NavLink } from 'react-router';
 import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
+
   return (
     <>
       <div className='py-15 sm:py-18 md:py-21 lg:py-27.5'>
@@ -27,7 +30,13 @@ const Banner = () => {
                     cursor: '|'
                 }}/>
               </h2>
-              <p className='text-color font-titillium max-w-132 text-[15px] mt-4 md:mt-5 lg:mt-7 xl:mt-10'>I am a MERN Stack Developer focused on building fast, scalable, user-centric web applications. Using MongoDB, Express.js, React, and Node.js, I create clean, efficient, and responsive solutions with an emphasis on performance and real-world impact.</p>
+              {/* <p className='text-color font-titillium max-w-132 text-[15px] mt-4 md:mt-5 lg:mt-7 xl:mt-10'>I am a MERN Stack Developer focused on building fast, scalable, user-centric web applications. Using MongoDB, Express.js, React, and Node.js, I create clean, efficient, and responsive solutions with an emphasis on performance and real-world impact.</p> */}
+              <p className='text-color font-titillium max-w-132 text-[15px] mt-4 md:mt-5 lg:mt-7 xl:mt-10'>I specialize in building fast, scalable, and user-centric web applications using Next.js, MongoDB, Express.js, React, and Node.js. My focus is on creating clean, efficient, and responsive solutions that prioritize performance, SEO, and real-world impact.</p>
+              <div className='mt-5 lg:mt-7.5 flex items-center gap-2.5'>
+                <button className='custom-btn custom-btn-resume flex items-center gap-2.5'><FaFilePdf /><span>Resume</span></button>
+                <button className='custom-btn'><NavLink to='/projects'>View Projects</NavLink></button>
+              </div>
+
             </div>
             <div className='w-full h-full bg-amber-200 hero-tow'>
               image

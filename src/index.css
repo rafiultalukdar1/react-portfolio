@@ -314,3 +314,21 @@ button {
 .Typewriter__cursor {
   @apply relative top-1.75 text-[55px] lg:text-[80px] font-light;
 }
+
+
+.custom-btn-resume {
+  @apply bg-transparent text-[#FFFFFFCC] border border-[#ffffff35];
+}
+
+.custom-btn-resume svg {
+  @apply text-white text-[14px];
+}
+
+.custom-btn-resume::after {
+  @apply bg-[#FDB400];
+}
+
+
+
+
+

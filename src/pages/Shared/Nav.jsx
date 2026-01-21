@@ -79,7 +79,7 @@ const Nav = () => {
 
         {/* Overlay */}
         {open && (
-            <div className="fixed inset-0 bg-black/80 z-42 cursor-pointer" onClick={()=> setOpen(false)} > <span className='absolute select-none pointer-events-none text-white py-2.5 px-5 m-2.5 bg-[#141414] font-titillium text-[12px] font-semibold uppercase tracking-[2px] [word-spacing:3px]' style={{
+            <div className="fixed inset-0 bg-black/85 z-42 cursor-pointer" onClick={()=> setOpen(false)} > <span className='absolute select-none pointer-events-none text-white py-2.5 px-5 m-2.5 bg-[#141414] font-titillium text-[12px] font-semibold uppercase tracking-[2px] [word-spacing:3px]' style={{
                 top: cursorPos.y + 10 + 'px',
                 left: cursorPos.x + 10 + 'px',
                 }}> Close Menu </span>
