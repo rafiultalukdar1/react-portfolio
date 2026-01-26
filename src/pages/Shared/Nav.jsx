@@ -50,10 +50,13 @@ const Nav = () => {
         <div className='py-5 border-b border-[#c1c0bf1e] bg-[#0C0C0C] sticky top-0 z-40'>
             <div className='container'>
                 <div className='flex justify-between items-center gap-2.5'>
-                    <div>
-                        <NavLink to='/'>
-                            <img className='max-w-12' src={logo} alt="logo" />
-                        </NavLink>
+                    <div className='flex items-center'>
+                        <div>
+                            <NavLink to='/'>
+                                <img className='max-w-12' src={logo} alt="logo" />
+                            </NavLink>
+                        </div>
+                        <div className='hidden xl:block invisible w-35'></div>
                     </div>
                     <div className='nav-items space-x-5.5 hidden lg:block'>
                         <NavLink to='/'>Home</NavLink>

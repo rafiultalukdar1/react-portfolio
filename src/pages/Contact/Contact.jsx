@@ -1,12 +1,11 @@
 import React from 'react';
+import ContactTop from './ContactComponents/ContactTop';
 
 const Contact = () => {
     return (
-        <div className='container'>
-            <div className='py-50 text-[55px] font-bold text-white'>
-                Contact
-            </div>
-        </div>
+        <>
+            <ContactTop></ContactTop>
+        </>
     );
 };
 

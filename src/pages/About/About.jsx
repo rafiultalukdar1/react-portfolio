@@ -1,12 +1,11 @@
 import React from 'react';
+import AboutTop from './AboutComponents/AboutTop';
 
 const About = () => {
     return (
-        <div className='container'>
-            <div className='py-50 text-[55px] font-bold text-white'>
-                About
-            </div>
-        </div>
+        <>
+            <AboutTop></AboutTop>
+        </>
     );
 };
 
