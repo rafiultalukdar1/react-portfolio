@@ -57,7 +57,7 @@ const Banner = () => {
             <div className='hero-tow'>
               <div ref={cardRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card rounded-lg p-3.75 sm:p-5' >
                 <div className='bg-[#0C0C0C] relative'>
-                  <img className='max-w-[520px] w-full' src={image} alt="" />
+                  <img className='max-w-130 w-full' src={image} alt="" />
                   <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[40%] bg-linear-to-t from-black/99 to-transparent'></div>
                 </div>
               </div>
