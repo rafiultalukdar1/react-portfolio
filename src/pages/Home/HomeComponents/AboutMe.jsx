@@ -39,7 +39,7 @@ const AboutMe = () => {
                         <h2 className='font-Rajdhani uppercase text-white text-[32px] sm:text-[40px] md:text-[45px] lg:text-[55px] font-bold absolute top-0 left-1/2 -translate-x-1/2 leading-0 whitespace-nowrap'>About <span className='text-[#FDB400]'>Me</span></h2>
                     </div>
 
-                    <div className='mt-18 sm:mt-22 md:mt-25 lg:mt-32'>
+                    <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
                         <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Personal information</h2>
                         <div className='grid grid-cols-12 mt-3.75 sm:mt-5 gap-5'>
                             <div className='col-span-full lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-2 sm:gap-y-3'>

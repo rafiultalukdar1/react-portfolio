@@ -339,7 +339,7 @@ button {
 
 /*= Cusotm Hover =*/
 .hover-card {
-  @apply relative inline-block border-[2.5px] border-transparent transition-[background] duration-300;
+  @apply relative z-10 inline-block border-[2.5px] border-transparent transition-[background] duration-300;
   background:
     linear-gradient(#141414, #141414) padding-box,
     radial-gradient(
