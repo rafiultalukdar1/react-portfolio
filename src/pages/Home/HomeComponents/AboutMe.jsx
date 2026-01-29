@@ -40,7 +40,7 @@ const AboutMe = () => {
                     </div>
 
                     <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
-                        <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Personal information</h2>
+                        <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Personal information!</h2>
                         <div className='grid grid-cols-12 mt-3.75 sm:mt-5 gap-5'>
                             <div className='col-span-full lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-2 sm:gap-y-3'>
                                 <div className='flex flex-col gap-2 sm:gap-3'>
@@ -71,7 +71,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             <div className='col-span-full lg:col-span-4'>
-                                <SyntaxHighlighter language="javascript" style={tomorrow} customStyle={{ fontSize: '15px', borderRadius: '8px', padding: '15px', background: '#141414' }}>
+                                <SyntaxHighlighter language="javascript" style={tomorrow} customStyle={{ fontSize: '15px', borderRadius: '8px', padding: '15px', background: '#0C0C0C', border: '1px solid #c1c0bf1e' }}>
                                     {code}
                                 </SyntaxHighlighter>
                             </div>

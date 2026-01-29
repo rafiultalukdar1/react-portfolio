@@ -46,7 +46,7 @@ const Experience = () => {
         <>
             <div className='pt-12 sm:pt-15 md:pt-17.5 lg:pt-20'>
                 <div className='container'>
-                    <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Experiences</h2>
+                    <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Experiences!</h2>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7.5 mt-3.75 sm:mt-6.25'>
                         <div className='p-6.25 sm:p-7.5 bg-linear-to-br from-[#0C0C0C] to-[#fdb50081] rounded-xl sm:rounded-[20px] h-full flex flex-col justify-between'>
                             <div className='flex items-center gap-5 md:gap-7 lg:gap-8 xl:gap-12'>
@@ -69,9 +69,9 @@ const Experience = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 mt-3.75 sm:mt-10 gap-5 xl:gap-7.5'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 mt-3.75 sm:mt-10 gap-5 xl:gap-7.5'>
                         {experience.map((item) => (
-                            <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card py-5.5 sm:py-7.5 px-3.75 sm:px-7.5 rounded-xl'>
+                            <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card py-5.5 sm:py-7.5 px-5 sm:px-7.5 rounded-xl'>
                                 <div className='flex flex-col gap-1'>
                                     <div className='flex items-center gap-3 mb-1.5'>
                                         <div className='bg-[#FDB400] py-1.5 px-2 rounded text-[18px] text-black'>
