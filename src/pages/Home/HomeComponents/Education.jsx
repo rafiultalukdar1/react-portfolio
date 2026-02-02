@@ -16,7 +16,7 @@ const Education = () => {
             id: 2,
             role: "Career Journey",
             subject: "MERN Stack Developer",
-            institute: "Programming Hero (B. 12)",
+            institute: "Programming Hero",
             duration: "2025",
             description: "Built scalable web applications with the MERN stack, developing responsive UIs with React, backend services with Node.js/Express, and database solutions with MongoDB through real-world projects."
         },
