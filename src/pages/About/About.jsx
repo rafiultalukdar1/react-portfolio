@@ -7,6 +7,7 @@ import Skills from '../Home/HomeComponents/Skills';
 const About = () => {
     return (
         <>
+            <title>Rafiul Talukdar - About</title>
             <AboutTop></AboutTop>
             <Education></Education>
             <Experience></Experience>
