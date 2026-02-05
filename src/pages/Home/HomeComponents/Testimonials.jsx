@@ -23,7 +23,7 @@ const Testimonials = () => {
             text: "Rafiul was dedicated and patient, fixing my issues through several revisions & helping test on many mobile devices. Thanks again!",
             name: "Olivia",
             role: "Happy Client",
-            image: "https://i.ibb.co.com/TBn5B6KC/user-female.png"
+            image: "https://i.ibb.co.com/Q3phbRtm/user-female.png"
         },
         {
             quoteIcon: FaQuoteLeft,

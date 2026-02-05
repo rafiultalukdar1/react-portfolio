@@ -377,3 +377,23 @@ button {
 .testimonials-box:nth-child(4) {
   @apply bg-linear-to-tr from-[#250e6c] to-[#0e061e];
 }
+
+/* Swiper */
+.swiper-pagination-bullet {
+  background: #fdb50094 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #FDB400 !important;
+}
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 25px;
+  z-index: 20 !important;
+}
+.custom-btn-swiper {
+  @apply text-[#FFFFFFCC] border border-[#ffffff59] bg-transparent px-5.5 py-2.5;
+}
+.custom-btn-swiper::after {
+  @apply bg-[#FDB400];
+}
