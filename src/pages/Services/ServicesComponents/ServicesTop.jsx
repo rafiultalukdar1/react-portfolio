@@ -103,7 +103,7 @@ const ServicesTop = () => {
                                         <div>
                                             <ul className='flex flex-col gap-1'>
                                                 {service.scope.map((item, index) => (
-                                                    <li key={index} className='flex items-center gap-2 text-color font-titillium text-[15px]'><span><MdOutlineKeyboardDoubleArrowRight /></span>{item}</li>
+                                                    <li key={index} className='flex items-center gap-2 text-color font-titillium text-[15px]'><span className='text-[#FDB400]'><MdOutlineKeyboardDoubleArrowRight /></span>{item}</li>
                                                 ))}
                                             </ul>
                                         </div>
