@@ -110,16 +110,16 @@ const Gallery = () => {
                                         {({ isActive }) => (
                                             <div className="relative overflow-hidden">
                                                 <img src={item.img} alt={item.title} className="w-full" />
-                                                <div className={`absolute inset-x-0 bottom-0 z-10 p-5 pb-7.5 pt-10 bg-linear-to-t from-black/90 via-black/60 to-transparent transition-all duration-500 ease-in-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"}`} >
+                                                <div className={`absolute inset-x-0 bottom-0 z-10 p-3.75 sm:p-5 pb-5 sm:pb-7.5 pt-10 bg-linear-to-t from-black/90 via-black/60 to-transparent transition-all duration-500 ease-in-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"}`} >
                                                     <h3 className='text-[30px] md:text-[34px] font-bold text-primary font-rajdhani leading-0 mb-4.5'>{item.title}</h3>
-                                                    <p className='text-white font-titillium text-[20px]'>{item.desc}</p>
+                                                    <p className='text-white font-titillium text-[16px] sm:text-[18px] md:text-[20px]'>{item.desc}</p>
                                                     <button className='custom-btn custom-btn-swiper mt-2.5'><NavLink to='/projects'>See More</NavLink></button>
                                                 </div>
                                                 {/* <div className={`bg-[#FDB400] py-3 px-5 absolute top-0 right-0 z-20 transition-[transform,opacity] duration-500 ease-in-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
                                                     <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className='text-black font-titillium uppercase text-[14px] font-semibold flex items-center gap-2'><BsBoxArrowInUpRight /><span>Live Demo</span></a>
                                                 </div> */}
-                                                <div className={`absolute top-0 right-0 z-20 bg-[#FDB400] py-3.75 px-6.25 transition-all duration-700 ease-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`} >
-                                                    <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-black uppercase text-[14px] font-semibold font-titillium"><BsBoxArrowInUpRight className='text-[18px]'/>Live Demo</a>
+                                                <div className={`absolute top-0 right-0 z-20 bg-[#FDB400] py-2.5 sm:py-3.75 px-5 sm:px-6.25 transition-all duration-700 ease-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`} >
+                                                    <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-black uppercase text-[14px] font-semibold font-titillium"><BsBoxArrowInUpRight className='text-[18px]'/>Live Site</a>
                                                 </div>
                                             </div>
                                         )}

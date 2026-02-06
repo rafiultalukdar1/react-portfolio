@@ -348,7 +348,7 @@ button {
   background:
     linear-gradient(#141414, #141414) padding-box,
     radial-gradient(
-      250px circle at var(--x,0px) var(--y,0px),
+      300px circle at var(--x,0px) var(--y,0px),
       rgba(253,180,0,var(--active,0)),
       transparent 70%
     ) border-box;
