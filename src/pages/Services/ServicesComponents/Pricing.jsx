@@ -80,7 +80,7 @@ const Pricing = () => {
                     <div class='mt-3.75 sm:mt-6.25 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {pricingPlans.map(price => (
                             <div key={price.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card px-3.75 sm:px-8 py-3.75 sm:py-8 rounded-xl relative group'>
-                                <div className='absolute top-0 left-1/2 -translate-x-1/2 bg-[#FDB400] py-2 px-5.5 rounded-bl rounded-br'>
+                                <div className='absolute top-0 left-1/2 -translate-x-1/2 bg-[#FDB400] py-1.5 px-5.5 rounded-bl rounded-br'>
                                     <p className='text-black uppercase font-titillium text-[12px] font-bold tracking-[1px] [word-spacing:2px]'>{price.title}</p>
                                 </div>
                                 <div className='flex flex-col gap-5 sm:gap-7.5 mt-10'>
