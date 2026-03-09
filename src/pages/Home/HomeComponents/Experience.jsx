@@ -17,7 +17,7 @@ const Experience = () => {
             duration: "2 Years",
             role: "Front-End Developer",
             description:
-            "Created responsive and SEO-friendly web applications using React.js, Tailwind CSS, and Bootstrap. Built reusable UI components, ensured cross-browser compatibility, and delivered visually polished, user-focused interfaces.",
+            "Created responsive and SEO-friendly web applications using HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. Built reusable UI components, ensured cross-browser compatibility, and delivered visually polished, user-focused interfaces.",
         },
         {
             id: 1,

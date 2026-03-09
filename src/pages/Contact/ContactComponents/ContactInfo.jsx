@@ -55,11 +55,10 @@ const ContactInfo = () => {
             <div className='container'>
                 <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
                     <h2 class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Contact Information!</h2>
-
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 items-start'>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-5'>
                             {contact.map(item => (
-                                <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card hover-card-small py-8.75 px-5 sm:px-7 rounded-xl'>
+                                <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card hover-card-small py-5.5 sm:py-8.75 px-4 sm:px-7 rounded-lg'>
                                     <div className='flex items-center gap-5'>
                                         <div className='text-[34px] text-color'>{item.icon}</div>
                                         <div className='flex flex-col gap-1'>
@@ -71,8 +70,16 @@ const ContactInfo = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='h-[550px] bg-amber-800 w-full'>
-
+                        <div className=''>
+                            <div className='hover-card py-5 sm:py-7.5 px-3.75 sm:px-6.25 rounded-lg w-full' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+                                <h2 className='text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] font-medium font-titillium text-white text-center'>Let’s Chat About Your Project</h2>
+                                <form action="" className='mt-5 sm:mt-8 flex flex-col gap-2.5 sm:gap-3.75'>
+                                    <input name="name" type="text" placeholder="Your Full Name" className='input-class'/>
+                                    <input name="email" type="email" placeholder="Email ID" className='input-class'/>
+                                    <input name="subject" type="text" placeholder="Subject" className='input-class'/>
+                                    <textarea name="textarea" placeholder="Type Your Message" className='input-class min-h-30 sm:min-h-37.5 py-2.5'/>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -95,7 +95,7 @@ const Pricing = () => {
                                         ))}
                                     </ul>
                                     <div className='text-center pt-1 sm:pt-2.5 pb-2.5 sm:pb-5'>
-                                        <button className='px-5 py-2.5 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#FDB400] text-black'>Explore Plans</button>
+                                        <button className='px-5 py-2.5 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#141414] border border-[#FDB400] text-[#FDB400] hover:text-black hover:bg-[#FDB400] transition duration-300'>Explore Plans</button>
                                     </div>
                                 </div>
                             </div>

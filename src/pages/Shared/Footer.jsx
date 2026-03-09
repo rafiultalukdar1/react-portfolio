@@ -36,7 +36,7 @@ const Footer = () => {
                             <p className='text-color text-[15px] font-titillium max-w-120'>Stay updated on my latest projects and releases. Sign up for exclusive updates.</p>
                             <div className="relative max-w-110 w-full mt-3.75">
                                 <form className="relative">
-                                    <input type="email" placeholder="Email..." required className="w-full h-12 px-4 bg-[rgba(95,95,95,0.1)] border border-[#c1c0bf1e] rounded text-gray-800 placeholder-[#FFFFFFCC] outline-none font-medium font-titillium focus:border-[#fdb5009c]" />
+                                    <input type="email" placeholder="Email..." required className="w-full h-12 px-4 bg-[rgba(95,95,95,0.1)] border border-[#c1c0bf1e] rounded text-[#FFFFFFCC] placeholder-[#FFFFFFCC] outline-none font-medium font-titillium focus:border-[#fdb5009c]" />
                                     <button type="submit" className="absolute top-0 right-0 h-full px-5.5 sm:px-8 bg-[#FDB400] text-gray-900 font-semibold rounded-r flex items-center justify-center hover:opacity-95 font-titillium uppercase" ><FaPaperPlane className="mr-2.5" /> Send </button>
                                 </form>
 

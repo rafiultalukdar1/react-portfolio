@@ -329,7 +329,6 @@ button {
   @apply relative top-1.75 text-[55px] lg:text-[80px] font-light;
 }
 
-
 .custom-btn-resume {
   @apply bg-[#0C0C0C] text-[#FFFFFFCC] border border-[#ffffff59];
 }
@@ -396,4 +395,9 @@ button {
 }
 .custom-btn-swiper::after {
   @apply bg-[#FDB400];
+}
+
+.input-class {
+  @apply w-full h-12 px-5 sm:py-3 bg-[#141414] border border-[#ffffff31] rounded text-[#FFFFFFCC] text-[14px] sm:text-[16px] placeholder-[#FFFFFFCC] outline-none font-medium focus:border-[#fdb5009c];
+  font-family: 'Titillium Web', sans-serif;
 }
