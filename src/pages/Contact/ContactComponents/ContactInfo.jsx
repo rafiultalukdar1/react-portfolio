@@ -78,6 +78,9 @@ const ContactInfo = () => {
                                     <input name="email" type="email" placeholder="Email ID" className='input-class'/>
                                     <input name="subject" type="text" placeholder="Subject" className='input-class'/>
                                     <textarea name="textarea" placeholder="Type Your Message" className='input-class min-h-30 sm:min-h-37.5 py-2.5'/>
+                                    <div className='pt-2'>
+                                        <button type="submit" className='custom-btn'>Submit</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>

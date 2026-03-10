@@ -13,6 +13,10 @@ const code = `const rafi = {
 
 const AboutMe = () => {
 
+    const startYear = 2023;
+    const currentYear = new Date().getFullYear();
+    const experience = currentYear - startYear;
+
     const profileInfo = [
         { label: "Name", value: "Rafiul Talukdar" },
         { label: "Date of Birth", value: "29 April 2006" },
@@ -24,7 +28,7 @@ const AboutMe = () => {
     const professionalInfo = [
         { label: "Degree", value: "Diploma in Engineering (Computer)" },
         { label: "Profession", value: "Web Developer" },
-        { label: "Experience", value: "3 Years" },
+        { label: "Experience", value: `${experience} Years` },
         { label: "Languages", value: "Bangla, English" },
         { label: "Phone", value: "01720229887" },
         { label: "E-mail", value: "rafiultalukdar007@gmail.com" },

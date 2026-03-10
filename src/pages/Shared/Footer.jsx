@@ -7,6 +7,10 @@ const Footer = () => {
 
     const year = new Date().getFullYear();
 
+    const startYear = 2023;
+    const currentYear = new Date().getFullYear();
+    const experienceYears = currentYear - startYear;
+
     const socials = [
         { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/rafiultalukdar/" },
         { icon: <FaFacebookF />, link: "https://www.facebook.com/rafiultalukdar1" },
@@ -25,7 +29,7 @@ const Footer = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 gap-y-7.5 mt-5'>
                         <div>
                             <h4 className='font-titillium text-[18px] text-white font-semibold uppercase mb-3'>01. Personal Summary</h4>
-                            <p className='text-color text-[15px] font-titillium max-w-120'>Programming, coding, and design drive my work. With 3+ years of local and freelance experience, I deliver reliable, scalable, and high-quality web solutions, ensuring on-time delivery and client satisfaction. I’m always ready to offer skilled, dependable support for any web project.</p>
+                            <p className='text-color text-[15px] font-titillium max-w-120'>Programming, coding, and design drive my work. With {experienceYears}+ years of local and freelance experience, I deliver reliable, scalable, and high-quality web solutions, ensuring on-time delivery and client satisfaction. I’m always ready to offer skilled, dependable support for any web project.</p>
                             <button className='custom-btn mt-7.5'><NavLink to='/projects'>My Portfolio</NavLink></button>
                             {/* <div className='flex flex-wrap items-center gap-x-2 gap-y-2.5 menu-social mt-3.75'>
                                 {socials.map((items, i) => ( <a key={i} href={items.link} target="_blank" rel="noopener noreferrer"> {items.icon} </a> ))}

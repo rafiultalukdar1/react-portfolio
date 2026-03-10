@@ -29,6 +29,10 @@ const Experience = () => {
         },
     ];
 
+    const startYear = 2023;
+    const currentYear = new Date().getFullYear();
+    const experienceYears = currentYear - startYear;
+
     // Customs Hover
     const handleMouseMove = (e) => {
         const card = e.currentTarget;
@@ -50,7 +54,7 @@ const Experience = () => {
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7.5 mt-3.75 sm:mt-6.25'>
                         <div className='p-6.25 sm:p-7.5 bg-linear-to-br from-[#0C0C0C] to-[#fdb50081] rounded-xl sm:rounded-[20px] h-full flex flex-col justify-between'>
                             <div className='flex items-center gap-5 md:gap-7 lg:gap-8 xl:gap-12'>
-                                <h1 className='text-primary font-rajdhani text-[65px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-extrabold leading-tight'>03+</h1>
+                                <h1 className='text-primary font-rajdhani text-[65px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-extrabold leading-tight'>{experienceYears.toString().padStart(2, "0")}+</h1>
                                 <h3 className='text-white font-rajdhani text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-none capitalize'>Years Of experience</h3>
                             </div>
                             <p className='font-titillium text-white text-[16px] pt-2.5'>I deliver end-to-end digital solutions, including design, development, bug fixes, and redesigns. My work focuses on responsive layouts, clean and maintainable code, and optimized performance to create seamless, user-friendly experiences.</p>
