@@ -3,6 +3,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
+import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
 
 const ContactInfo = () => {
 
@@ -50,11 +52,62 @@ const ContactInfo = () => {
         card.style.setProperty("--active", 0);
     };
 
+    // Form
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value.trim();
+        const email = e.target.email.value.trim();
+        const subject = e.target.subject.value.trim();
+        const message = e.target.textarea.value.trim();
+        if (!name || !email || !subject || !message) {
+            toast.error("All fields are required!", {
+                className: "toastify-black",
+                progressClassName: "toast-progress",
+                autoClose: 3000,
+                position: "top-center"
+            });
+            return;
+        }
+        if (!/\S+@\S+\.\S+/.test(email)) {
+            toast.error("Please enter a valid email!", {
+                className: "toastify-black",
+                progressClassName: "toast-progress",
+                autoClose: 3000,
+                position: "top-center"
+            });
+            return;
+        }
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            e.target,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(() => {
+            toast.success("Message Sent Successfully!", {
+                className: "toastify-black",
+                progressClassName: "toast-progress",
+                autoClose: 3000,
+                position: "top-center"
+            });
+            e.target.reset();
+        })
+        .catch(() => {
+            toast.error("Failed to send message!", {
+                className: "toastify-black",
+                progressClassName: "toast-progress",
+                autoClose: 3000,
+                position: "top-center"
+            });
+        });
+    };
+
+
     return (
         <>
             <div className='container'>
                 <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
-                    <h2 class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Contact Information!</h2>
+                    <h2 className="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Contact Information!</h2>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 items-start'>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-5'>
                             {contact.map(item => (
@@ -73,7 +126,7 @@ const ContactInfo = () => {
                         <div className=''>
                             <div className='hover-card py-5 sm:py-7.5 px-3.75 sm:px-6.25 rounded-lg w-full' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                                 <h2 className='text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] font-medium font-titillium text-white text-center'>Let’s Chat About Your Project</h2>
-                                <form action="" className='mt-5 sm:mt-8 flex flex-col gap-2.5 sm:gap-3.75'>
+                                <form onSubmit={sendEmail} action="" className='mt-5 sm:mt-8 flex flex-col gap-2.5 sm:gap-3.75'>
                                     <input name="name" type="text" placeholder="Your Full Name" className='input-class'/>
                                     <input name="email" type="email" placeholder="Email ID" className='input-class'/>
                                     <input name="subject" type="text" placeholder="Subject" className='input-class'/>
