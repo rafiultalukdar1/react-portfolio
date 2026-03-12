@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
@@ -36,6 +36,20 @@ const ContactInfo = () => {
             text: "LinkedIn Profile",
             link: "https://www.linkedin.com/in/rafiultalukdar/",
             icon: <FaLinkedinIn />
+        },
+        {
+            id: 0.5,
+            label: "Facebook",
+            text: "Facebook Profile",
+            link: "https://www.facebook.com/rafiultalukdar1",
+            icon: <FaFacebookF />
+        },
+        {
+            id: 0.6,
+            label: "WhatsApp",
+            text: "01720229887",
+            link: "https://wa.me/01720229887",
+            icon: <FaWhatsapp />
         }
     ];
 
@@ -126,12 +140,12 @@ const ContactInfo = () => {
                         <div className=''>
                             <div className='hover-card py-5 sm:py-7.5 px-3.75 sm:px-6.25 rounded-lg w-full' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                                 <h2 className='text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] font-medium font-titillium text-white text-center'>Let’s Chat About Your Project</h2>
-                                <form onSubmit={sendEmail} action="" className='mt-5 sm:mt-8 flex flex-col gap-2.5 sm:gap-3.75'>
+                                <form onSubmit={sendEmail} action="" className='mt-3.75 sm:mt-5 flex flex-col gap-2.5 sm:gap-3.75'>
                                     <input name="name" type="text" placeholder="Your Full Name" className='input-class'/>
                                     <input name="email" type="email" placeholder="Email ID" className='input-class'/>
                                     <input name="subject" type="text" placeholder="Subject" className='input-class'/>
                                     <textarea name="textarea" placeholder="Type Your Message" className='input-class min-h-30 sm:min-h-37.5 py-2.5'/>
-                                    <div className='pt-2'>
+                                    <div>
                                         <button type="submit" className='custom-btn'>Submit</button>
                                     </div>
                                 </form>
