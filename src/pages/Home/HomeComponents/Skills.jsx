@@ -1,17 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const skills = [
-  { name: "Figma", percent: 95 },
-  { name: "Photoshop (psd)", percent: 90 },
-  { name: "Adobe XD", percent: 85 },
-  { name: "Adobe Illustrator", percent: 80 }
+  { name: "Figma", percent: 99 },
+  { name: "Photoshop (psd)", percent: 97 },
+  { name: "Adobe XD", percent: 95 },
+  { name: "Adobe Illustrator", percent: 92 },
+  { name: "Adobe InDesign", percent: 90 }
 ];
 
 const devSkills = [
-  { name: "HTML & CSS", percent: 98 },
-  { name: "JavaScript & jQuery", percent: 95 },
-  { name: "React & Next.js", percent: 90 },
-  { name: "MongoDB, Express.js, Node.js", percent: 85 }
+  { name: "HTML & CSS", percent: 99 },
+  { name: "JavaScript & jQuery", percent: 98 },
+  { name: "React & Next.js", percent: 97 },
+  { name: "REST API & JSON", percent: 96 },
+  { name: "MongoDB, Express.js, Node.js", percent: 95 }
 ];
 
 const Skills = () => {
