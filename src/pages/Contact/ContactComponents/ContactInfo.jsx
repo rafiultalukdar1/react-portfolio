@@ -37,20 +37,20 @@ const ContactInfo = () => {
             link: "https://www.linkedin.com/in/rafiultalukdar/",
             icon: <FaLinkedinIn />
         },
-        {
-            id: 0.5,
-            label: "Facebook",
-            text: "Facebook Profile",
-            link: "https://www.facebook.com/rafiultalukdar1",
-            icon: <FaFacebookF />
-        },
-        {
-            id: 0.6,
-            label: "WhatsApp",
-            text: "01720229887",
-            link: "https://wa.me/01720229887",
-            icon: <FaWhatsapp />
-        }
+        // {
+        //     id: 0.5,
+        //     label: "Facebook",
+        //     text: "Facebook Profile",
+        //     link: "https://www.facebook.com/rafiultalukdar1",
+        //     icon: <FaFacebookF />
+        // },
+        // {
+        //     id: 0.6,
+        //     label: "WhatsApp",
+        //     text: "01720229887",
+        //     link: "https://wa.me/01720229887",
+        //     icon: <FaWhatsapp />
+        // }
     ];
 
     // Customs Hover
