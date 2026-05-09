@@ -1,0 +1,34 @@
+[
+  {
+    "id": "veraos-corporate-platform",
+    "thumbnail": "https://i.ibb.co.com/WvGcH0CW/Veraos-Website.png",
+    "projectName": "Veraos – Corporate Website",
+    "description": "Veraos is a modern, fully responsive corporate website converted from Figma into clean, production-ready code. It presents a high-end AI-driven platform interface with a strong focus on performance, user experience, and conversion-driven design.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Particles.js",
+      "WOW.js"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/Veraos-Website/",
+    "githubLink": "https://github.com/rafiultalukdar1/Veraos-Website.git"
+  },
+  {
+    "id": "viredian-modern-saas-marketing-landing",
+    "thumbnail": "https://i.ibb.co/FbFT4brC/viredian.png",
+    "projectName": "Viredian – Marketing Landing Page",
+    "description": "Viredian is a modern, fully responsive marketing landing page converted from Figma into clean, production-ready code. It is designed with a strong focus on conversion, performance, and user experience, delivering a premium digital interface for showcasing a product or SaaS solution.",
+    "techStack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Owl Carousel",
+        "AOS"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/viredian/",
+    "githubLink": "https://github.com/rafiultalukdar1/viredian.git"
+  }
+]
