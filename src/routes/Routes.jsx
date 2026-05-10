@@ -27,6 +27,7 @@ export const router = createBrowserRouter([
             {
                 path: '/projects',
                 Component: Projects,
+                loader: () => fetch('/frontend.json'),
             },
             {
                 path: '/contact',

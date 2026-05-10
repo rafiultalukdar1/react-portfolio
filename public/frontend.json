@@ -30,5 +30,21 @@
     ],
     "liveLink": "https://rafiultalukdar1.github.io/viredian/",
     "githubLink": "https://github.com/rafiultalukdar1/viredian.git"
+  },
+  {
+    "id": "corefit-fitness-ecommerce-landing-page",
+    "thumbnail": "https://i.ibb.co.com/LjRzyjR/Core-Fit.png",
+    "projectName": "CoreFit – E-commerce Landing Page",
+    "description": "CoreFit is a modern and fully responsive fitness e-commerce landing page converted from Figma into clean, production-ready code. It is designed for gym brands, fitness trainers, and wellness businesses that want to showcase services, trainers, and fitness products in a strong conversion-focused layout.",
+    "techStack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Swiper Carousel",
+        "WOW.js"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/ABC-Fitness/",
+    "githubLink": "https://github.com/rafiultalukdar1/ABC-Fitness.git"
   }
 ]
