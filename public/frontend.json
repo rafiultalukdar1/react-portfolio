@@ -46,5 +46,19 @@
     ],
     "liveLink": "https://rafiultalukdar1.github.io/ABC-Fitness/",
     "githubLink": "https://github.com/rafiultalukdar1/ABC-Fitness.git"
+  },
+  {
+    "id": "buyudugitti-kids-marketplace-ui-design",
+    "thumbnail": "https://i.ibb.co.com/G4KrDN1S/B-y-d-Gitti-01.png",
+    "projectName": "BüyüdüGitti – Kids Marketplace UI",
+    "description": "BüyüdüGitti is a modern and fully responsive second-hand marketplace website designed for buying and selling pre-loved kids’ products. Built with HTML, CSS, and JavaScript, it delivers a clean and user-friendly interface inspired by real-world platforms, ensuring a smooth and engaging experience across all devices.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Swiper Carousel"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/B-y-d-Gitti/",
+    "githubLink": "https://github.com/rafiultalukdar1/B-y-d-Gitti.git"
   }
 ]

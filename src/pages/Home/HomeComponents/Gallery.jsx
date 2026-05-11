@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Pagination } from "swiper/modules";
 
@@ -64,10 +63,8 @@ const Gallery = () => {
                         <h2 className='font-Rajdhani uppercase text-[#2b2a2a91] text-[48px] sm:text-[65px] md:text-[75px] lg:text-[95px] font-extrabold text-center leading-0'>Projects</h2>
                         <h2 className='font-Rajdhani uppercase text-white text-[32px] sm:text-[40px] md:text-[45px] lg:text-[55px] font-bold absolute top-0 left-1/2 -translate-x-1/2 leading-0 whitespace-nowrap'>Tech <span className='text-[#FDB400]'>Works</span></h2>
                     </div>
-
                     <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
                         <h2 class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">My Project Highlights!</h2>
-
                         <div className='mt-6.75 sm:mt-10 md:mt-12 lg:mt-15 xl:mt-20 pb-10'>
                             <Swiper
                                 modules={[EffectCoverflow, Autoplay, Pagination]}
@@ -118,8 +115,8 @@ const Gallery = () => {
                                                 {/* <div className={`bg-[#FDB400] py-3 px-5 absolute top-0 right-0 z-20 transition-[transform,opacity] duration-500 ease-in-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
                                                     <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className='text-black font-titillium uppercase text-[14px] font-semibold flex items-center gap-2'><BsBoxArrowInUpRight /><span>Live Demo</span></a>
                                                 </div> */}
-                                                <div className={`absolute top-0 right-0 z-20 bg-[#FDB400] py-2.5 sm:py-3.75 px-5 sm:px-6.25 transition-all duration-700 ease-out ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`} >
-                                                    <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-black uppercase text-[14px] font-semibold font-titillium"><BsBoxArrowInUpRight className='text-[18px]'/>Live Site</a>
+                                                <div className={`absolute top-0 right-0 z-20 bg-[#FDB400] py-2.5 sm:py-3.75 px-5 sm:px-6.25 transition-all duration-700 ease-out rounded-bl-lg ${isActive ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`} >
+                                                    <a href={item.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-black uppercase text-[14px] font-semibold font-titillium tracking-[1px] [word-spacing:2px]"><BsBoxArrowInUpRight className='text-[18px]'/>Live Preview</a>
                                                 </div>
                                             </div>
                                         )}

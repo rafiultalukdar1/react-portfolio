@@ -407,12 +407,25 @@ button {
   color: #fff !important;
 }
 
+/* Tab */
 @keyframes fade {
   from {
     opacity: 0;
-  transform: translateY(10px);
+    transform: translateY(10px);
   }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal */
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
