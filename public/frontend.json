@@ -15,6 +15,22 @@
     "liveLink": "https://rafiultalukdar1.github.io/Veraos-Website/",
     "githubLink": "https://github.com/rafiultalukdar1/Veraos-Website.git"
   },
+    {
+    "id": "corefit-fitness-ecommerce-landing-page",
+    "thumbnail": "https://i.ibb.co.com/LjRzyjR/Core-Fit.png",
+    "projectName": "CoreFit – E-commerce Landing Page",
+    "description": "CoreFit is a modern and fully responsive fitness e-commerce landing page converted from Figma into clean, production-ready code. It is designed for gym brands, fitness trainers, and wellness businesses that want to showcase services, trainers, and fitness products in a strong conversion-focused layout.",
+    "techStack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Swiper Carousel",
+        "WOW.js"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/ABC-Fitness/",
+    "githubLink": "https://github.com/rafiultalukdar1/ABC-Fitness.git"
+  },
   {
     "id": "viredian-modern-saas-marketing-landing",
     "thumbnail": "https://i.ibb.co/FbFT4brC/viredian.png",
@@ -32,22 +48,6 @@
     "githubLink": "https://github.com/rafiultalukdar1/viredian.git"
   },
   {
-    "id": "corefit-fitness-ecommerce-landing-page",
-    "thumbnail": "https://i.ibb.co.com/LjRzyjR/Core-Fit.png",
-    "projectName": "CoreFit – E-commerce Landing Page",
-    "description": "CoreFit is a modern and fully responsive fitness e-commerce landing page converted from Figma into clean, production-ready code. It is designed for gym brands, fitness trainers, and wellness businesses that want to showcase services, trainers, and fitness products in a strong conversion-focused layout.",
-    "techStack": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "Swiper Carousel",
-        "WOW.js"
-    ],
-    "liveLink": "https://rafiultalukdar1.github.io/ABC-Fitness/",
-    "githubLink": "https://github.com/rafiultalukdar1/ABC-Fitness.git"
-  },
-  {
     "id": "buyudugitti-kids-marketplace-ui-design",
     "thumbnail": "https://i.ibb.co.com/G4KrDN1S/B-y-d-Gitti-01.png",
     "projectName": "BüyüdüGitti – Kids Marketplace UI",
@@ -60,5 +60,85 @@
     ],
     "liveLink": "https://rafiultalukdar1.github.io/B-y-d-Gitti/",
     "githubLink": "https://github.com/rafiultalukdar1/B-y-d-Gitti.git"
+  },
+  {
+    "id": "brandme-digital-marketing-agency-website",
+    "thumbnail": "https://i.ibb.co.com/Q1Q55Xf/Brandme-01.png",
+    "projectName": "BrandMe – Marketing Agency Website",
+    "description": "BrandMe is a modern and fully responsive marketing agency landing page converted from Figma into clean, production-ready code. It is designed for branding agencies, creative studios, and digital marketing businesses that want to showcase their services, portfolio, and brand identity in a strong conversion-focused layout.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Swiper Carousel",
+      "WOW.js",
+      "Pace.js"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/Brandme/",
+    "githubLink": "https://github.com/rafiultalukdar1/Brandme.git"
+  },
+  {
+    "id": "zoisoback-government-service-initiative",
+    "thumbnail": "https://i.ibb.co.com/Xkkj8Kw6/Zo-Iso-Back-01.png",
+    "projectName": "ZoIsoBack – Government Initiative Service Website",
+    "description": "ZoIsoBack is a modern and fully responsive government initiative website converted from PDF into clean, production-ready code. It is designed for public service programs, municipality campaigns, and energy-saving initiatives that aim to provide citizens with clear guidance, awareness, and support through an informative and user-friendly digital experience.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Swiper",
+      "Slick Carousel"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/ZoIsoBack/",
+    "githubLink": "https://github.com/rafiultalukdar1/ZoIsoBack.git"
+  },
+  {
+    "id": "app-autolayer-web3-dashboard-platform",
+    "thumbnail": "https://i.ibb.co.com/GQgCJNRY/App-Auto-Layer.png",
+    "projectName": "App-AutoLayer – Web3 Multi-Page Website",
+    "description": "App-AutoLayer is a modern, fully responsive Web3 multi-page website built with HTML, CSS, and JavaScript. It is inspired by real-world crypto platform interfaces and designed to deliver a clean, professional, and scalable frontend experience.",
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/App-AutoLayer/",
+    "githubLink": "https://github.com/rafiultalukdar1/App-AutoLayer.git"
+  },
+  {
+    "id": "dybamo-fashion-ecommerce-landing-page",
+    "thumbnail": "https://i.ibb.co.com/S7ZWnmMc/Dy-Bamo-01.png",
+    "projectName": "Dy'Bamo – E-commerce Landing Page",
+    "description": "Dy'Bamo is a modern and fully responsive fashion e-commerce landing page converted from Figma into clean, production-ready code. Designed for streetwear and clothing brands, the website delivers a premium dark-themed shopping experience with a strong focus on product presentation and brand identity.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Owl Carousel"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/dy_bamo/",
+    "githubLink": "https://github.com/rafiultalukdar1/dy_bamo.git"
+  },
+  {
+    "id": "davinhf-charity-organization-website",
+    "thumbnail": "https://i.ibb.co.com/Vc7cscyK/Davin-HF.png",
+    "projectName": "DavinHF – Charity Organization Website",
+    "description": "DavinHF is a modern and fully responsive charity organization website converted from Figma into clean, production-ready code. Designed for nonprofits, foundations, and social impact organizations, the website provides a clear and engaging platform to showcase missions, encourage donations, and connect with volunteers.",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Font Awesome"
+    ],
+    "liveLink": "https://rafiultalukdar1.github.io/DavinHF/",
+    "githubLink": "https://github.com/rafiultalukdar1/DavinHF.git"
   }
 ]
