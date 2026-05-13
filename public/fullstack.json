@@ -1,0 +1,28 @@
+[
+    {
+        "id": "cityfix-fullstack-saas-management-platform",
+        "thumbnail": "https://i.ibb.co.com/fVqmpgLx/full-stack-web-application-01.png",
+        "projectName": "CityFix – Full Stack Web Application",
+        "description": "CityFix is a modern full-stack SaaS web application designed to streamline public infrastructure issue management through a complete role-based system for Admin, Staff, and Citizens. Citizens can report and track issues in real time, Staff members can manage and resolve assigned tasks efficiently, while Admins have full control over users, reports, analytics, and system operations. Built with React, Node.js, Express.js, and MongoDB, the platform delivers secure authentication, responsive performance, issue prioritization, payment integration, premium subscriptions, and a transparent timeline-based workflow for improved accountability and user experience.",
+        "techStack": [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "DaisyUI",
+            "TanStack Query",
+            "Axios",
+            "Firebase Auth",
+            "Stripe",
+            "React PDF",
+            "React Toastify",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase Admin SDK",
+            "JWT"
+        ],
+        "liveLink": "https://project-city-fix.netlify.app/",
+        "githubClient": "https://github.com/rafiultalukdar1/CityFix-Client.git",
+        "githubServer": "https://github.com/rafiultalukdar1/CityFix-Server.git"
+    }
+]

@@ -5,13 +5,13 @@ import ProjectsItems from './ProjectsComponents/ProjectsItems';
 
 const Projects = () => {
 
-    const frontData = useLoaderData();
+    const { frontendData, fullstackData } = useLoaderData();
 
     return (
      <>
         <title>Rafiul Talukdar - Projects</title>
         <ProjectsTop></ProjectsTop>
-        <ProjectsItems frontData={frontData}></ProjectsItems>
+        <ProjectsItems frontData={frontendData} fullstackData={fullstackData}></ProjectsItems>
      </>
     );
 };

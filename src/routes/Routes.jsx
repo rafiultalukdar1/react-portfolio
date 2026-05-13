@@ -27,7 +27,20 @@ export const router = createBrowserRouter([
             {
                 path: '/projects',
                 Component: Projects,
-                loader: () => fetch('/frontend.json'),
+                loader: async () => {
+                    const [frontendRes, fullstackRes] = await Promise.all([
+                        fetch('/frontend.json'),
+                        fetch('/fullstack.json')
+                    ]);
+
+                    const frontendData = await frontendRes.json();
+                    const fullstackData = await fullstackRes.json();
+
+                    return {
+                        frontendData,
+                        fullstackData
+                    };
+                },
             },
             {
                 path: '/contact',
