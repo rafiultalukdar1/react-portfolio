@@ -66,7 +66,7 @@ const ProjectsItems = ( {frontData, fullstackData } ) => {
                                                 <h2 className='text-[20px] sm:text-[24px] md:text-[30px] text-[#FDB400] font-bold font-rajdhani'>{selectedProject.projectName}</h2>
                                                 <p className='text-[15px] sm:text-[16px] font-titillium text-color'>{selectedProject.description}</p>
                                                 <div>
-                                                    <h6 className='text-[15px] sm:text-[16px] font-titillium text-white'>Tech Stack:</h6>
+                                                    <h6 className='text-[15px] sm:text-[16px] font-titillium text-[#FDB400]'>Tech Stack:</h6>
                                                     <ul className='flex flex-wrap items-center gap-1.5 mt-1.5'>
                                                         {
                                                             selectedProject.techStack.map((tech, index) => (
@@ -134,7 +134,7 @@ const ProjectsItems = ( {frontData, fullstackData } ) => {
                                                 <h2 className='text-[20px] sm:text-[24px] md:text-[30px] text-[#FDB400] font-bold font-rajdhani'>{selectedProject.projectName}</h2>
                                                 <p className='text-[15px] sm:text-[16px] font-titillium text-color'>{selectedProject.description}</p>
                                                 <div>
-                                                    <h6 className='text-[15px] sm:text-[16px] font-titillium text-white'>Tech Stack:</h6>
+                                                    <h6 className='text-[15px] sm:text-[16px] font-titillium text-[#FDB400]'>Tech Stack:</h6>
                                                     <ul className='flex flex-wrap items-center gap-1.5 mt-1.5'>
                                                         {
                                                             selectedProject.techStack.map((tech, index) => (

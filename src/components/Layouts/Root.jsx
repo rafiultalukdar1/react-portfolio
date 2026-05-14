@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Outlet, useNavigation } from 'react-router';
 import Nav from '../../pages/Shared/Nav';
-import { Outlet } from 'react-router';
 import Footer from '../../pages/Shared/Footer';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import Preloader from '../../pages/Shared/Preloader';
+import Cursor from '../../pages/Shared/Cursor';
 
 const Root = () => {
+
+    const navigation = useNavigation();
+
+    const [loading, setLoading] = useState(true);
+
+    // initial load
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    const showLoader = loading || navigation.state === "loading";
+
     return (
         <>
-            <ScrollToTop></ScrollToTop>
-            <Nav></Nav>
-            <Outlet></Outlet>
-            <Footer></Footer>
+            {showLoader ? (
+                <Preloader />
+            ) : (
+                <>
+                    <Cursor />
+                    <ScrollToTop />
+                    <Nav />
+                    <Outlet />
+                    <Footer />
+                </>
+            )}
         </>
     );
 };
