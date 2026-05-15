@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LuGraduationCap } from 'react-icons/lu';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Education = () => {
 
@@ -35,26 +37,34 @@ const Education = () => {
         card.style.setProperty("--active", 0);
     };
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             <div className='pt-12 sm:pt-15 md:pt-17.5 lg:pt-20'>
                 <div className='container'>
-                    <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Education!</h2>
+                    <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize' data-aos="fade-right">Education!</h2>
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 mt-3.75 sm:mt-6.25 gap-5 xl:gap-7.5'>
                         {eduInfo.map((item) => (
                             <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card py-5.5 sm:py-7.5 px-5 sm:px-7.5 rounded-xl'>
                                 <div className='flex flex-col gap-1'>
-                                    <div className='flex items-center gap-3 mb-1.5'>
+                                    <div className='flex items-center gap-3 mb-1.5' data-aos="fade-up" data-aos-delay="100">
                                         <div className='bg-[#FDB400] py-1.5 px-2 rounded text-[18px] text-black'>
                                             <LuGraduationCap />
                                         </div>
                                         <h6 className='text-[20px] font-semibold font-rajdhani text-white'>{item.role}</h6>
                                     </div>
-                                    <h2 className='text-white font-rajdhani text-[25px] sm:text-[27px] md:text-[29px] lg:text-[32px] font-bold leading-none'>{item.subject}</h2>
-                                    <h6 className='text-[20px] font-semibold font-rajdhani text-primary'>{item.institute}</h6>
-                                    <h6 className='text-[20px] font-semibold font-rajdhani text-color'>{item.duration}</h6>
-                                    <p className='font-titillium text-color text-[15px] mt-1.5'>{item.description}</p>
+                                    <h2 className='text-white font-rajdhani text-[25px] sm:text-[27px] md:text-[29px] lg:text-[32px] font-bold leading-none' data-aos="fade-up" data-aos-delay="200">{item.subject}</h2>
+                                    <h6 className='text-[20px] font-semibold font-rajdhani text-primary' data-aos="fade-up" data-aos-delay="300">{item.institute}</h6>
+                                    <h6 className='text-[20px] font-semibold font-rajdhani text-color' data-aos="fade-up" data-aos-delay="400">{item.duration}</h6>
+                                    <p className='font-titillium text-color text-[15px] mt-1.5' data-aos="fade-up" data-aos-delay="500">{item.description}</p>
                                 </div>
                             </div>
                         ))}

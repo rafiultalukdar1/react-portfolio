@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const code = `const rafi = {
   name: "Rafiul Talukdar",
@@ -34,22 +36,30 @@ const AboutMe = () => {
         { label: "E-mail", value: "rafiultalukdar007@gmail.com" },
     ];
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             <div className='pt-25 sm:pt-30 md:pt-35 lg:pt-40 xl:pt-45'>
                 <div className='container'>
-                    <div className='relative'>
+                    <div className='relative' data-aos="fade-up">
                         <h2 className='font-Rajdhani uppercase text-[#2b2a2a91] text-[48px] sm:text-[65px] md:text-[75px] lg:text-[95px] font-extrabold text-center leading-0'>Resume</h2>
                         <h2 className='font-Rajdhani uppercase text-white text-[32px] sm:text-[40px] md:text-[45px] lg:text-[55px] font-bold absolute top-0 left-1/2 -translate-x-1/2 leading-0 whitespace-nowrap'>About <span className='text-[#FDB400]'>Me</span></h2>
                     </div>
 
                     <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
-                        <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Personal information!</h2>
+                        <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize' data-aos="fade-right">Personal information!</h2>
                         <div className='grid grid-cols-12 mt-3.75 sm:mt-5 gap-5'>
                             <div className='col-span-full lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-2 sm:gap-y-3'>
                                 <div className='flex flex-col gap-2 sm:gap-3'>
                                     {profileInfo.map((item, index) => (
-                                        <div key={index} className="flex items-center gap-5 sm:gap-8">
+                                        <div key={index} className="flex items-center gap-5 sm:gap-8" data-aos="fade-up" data-aos-delay={index * 150}>
                                             <div className="flex justify-between items-center max-w-25 sm:max-w-27.5 w-full">
                                                 <p className="text-[15px] sm:text-[16px] font-titillium text-color">{item.label}</p>
                                                 <p className="text-[15px] sm:text-[16px] font-titillium text-color">:</p>
@@ -62,7 +72,7 @@ const AboutMe = () => {
                                 </div>
                                 <div className='flex flex-col gap-2 sm:gap-3'>
                                     {professionalInfo.map((item, index) => (
-                                        <div key={index} className="flex items-start gap-5 sm:gap-8">
+                                        <div key={index} className="flex items-start gap-5 sm:gap-8" data-aos="fade-up" data-aos-delay={index * 150}>
                                             <div className="flex justify-between items-center max-w-25 sm:max-w-27.5 w-full">
                                                 <p className="text-[15px] sm:text-[16px] font-titillium text-color">{item.label}</p>
                                                 <p className="text-[15px] sm:text-[16px] font-titillium text-color">:</p>
@@ -75,7 +85,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             <div className='col-span-full lg:col-span-4'>
-                                <SyntaxHighlighter language="javascript" style={tomorrow} customStyle={{ fontSize: '15px', borderRadius: '8px', padding: '15px', background: '#0C0C0C', border: '1px solid #c1c0bf1e' }}>
+                                <SyntaxHighlighter language="javascript" style={tomorrow} customStyle={{ fontSize: '15px', borderRadius: '8px', padding: '15px', background: '#0C0C0C', border: '1px solid #c1c0bf1e' }} data-aos="fade-up">
                                     {code}
                                 </SyntaxHighlighter>
                             </div>

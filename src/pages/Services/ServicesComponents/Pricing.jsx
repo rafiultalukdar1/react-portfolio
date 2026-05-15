@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Pricing = () => {
 
@@ -70,32 +72,40 @@ const Pricing = () => {
         card.style.setProperty("--active", 0);
     };
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             <div className='pt-12 sm:pt-15 md:pt-17.5 lg:pt-20'>
                 <div className='container'>
-                    <h2 className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Pricing & Packages!</h2>
+                    <h2 data-aos="fade-right" className='font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize'>Pricing & Packages!</h2>
 
 
                     <div class='mt-3.75 sm:mt-6.25 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {pricingPlans.map(price => (
                             <div key={price.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card px-3.75 sm:px-8 py-3.75 sm:py-8 rounded-xl relative group'>
                                 <div className='absolute top-0 left-1/2 -translate-x-1/2 bg-[#FDB400] py-1.5 px-5.5 rounded-bl rounded-br'>
-                                    <p className='text-black uppercase font-titillium text-[12px] font-bold tracking-[1px] [word-spacing:2px]'>{price.title}</p>
+                                    <p data-aos="fade-up" data-aos-delay="100" className='text-black uppercase font-titillium text-[12px] font-bold tracking-[1px] [word-spacing:2px]'>{price.title}</p>
                                 </div>
                                 <div className='flex flex-col gap-5 sm:gap-7.5 mt-10'>
                                     <div className='text-center'>
-                                        <h2 className='text-[55px] text-white font-rajdhani font-semibold leading-[1.1]'><span className='text-[32px] transition-colors duration-200 group-hover:text-[#FDB400]'>{price.currency}</span>{price.price}</h2>
-                                        <p className='text-[15px] font-titillium text-color'>{price.duration}</p>
+                                        <h2 data-aos="fade-up" data-aos-delay="200" className='text-[55px] text-white font-rajdhani font-semibold leading-[1.1]'><span className='text-[32px] transition-colors duration-200 group-hover:text-[#FDB400]'>{price.currency}</span>{price.price}</h2>
+                                        <p data-aos="fade-up" data-aos-delay="300" className='text-[15px] font-titillium text-color'>{price.duration}</p>
                                     </div>
-                                    <p className='text-[15px] font-titillium text-color max-w-77.5'>{price.description}</p>
+                                    <p data-aos="fade-up" data-aos-delay="400" className='text-[15px] font-titillium text-color max-w-77.5'>{price.description}</p>
                                     <ul className='flex flex-col gap-1'>
                                         {price.features.map((item, index) => (
-                                            <li key={index} className='flex items-center gap-2 text-color font-titillium text-[15px]'><span className='text-[#FDB400]'><MdOutlineKeyboardDoubleArrowRight /></span>{item}</li>
+                                            <li data-aos="fade-up" data-aos-delay={500 + index * 100} key={index} className='flex items-center gap-2 text-color font-titillium text-[15px]'><span className='text-[#FDB400]'><MdOutlineKeyboardDoubleArrowRight /></span>{item}</li>
                                         ))}
                                     </ul>
                                     <div className='text-center pt-1 sm:pt-2.5 pb-2.5 sm:pb-5'>
-                                        <button className='px-5 py-2.5 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#141414] border border-[#FDB400] text-[#FDB400] hover:text-black hover:bg-[#FDB400] transition duration-300'>Explore Plans</button>
+                                        <button data-aos="fade-up" data-aos-delay="1100" className='px-5 py-2.5 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] rounded bg-[#141414] border border-[#FDB400] text-[#FDB400] hover:text-black hover:bg-[#FDB400] transition duration-300'>Explore Plans</button>
                                     </div>
                                 </div>
                             </div>

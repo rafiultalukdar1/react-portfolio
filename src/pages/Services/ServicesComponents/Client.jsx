@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "swiper/css";
 import { TfiQuoteLeft } from "react-icons/tfi";
@@ -43,15 +45,23 @@ const Client = () => {
         }
     ];
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);    
+
 
     return (
         <>
             <div className='pt-12 sm:pt-15 md:pt-17.5 lg:pt-20'>
                 <div className='container'>
                     <div>
-                        <h2 class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Client Feedback!</h2>
+                        <h2 data-aos="fade-right" class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Client Feedback!</h2>
 
-                        <div className='mt-4 py-1'>
+                        <div className='mt-4 py-1' data-aos="fade-up">
                             <Swiper
                                 modules={[Autoplay]}
                                 spaceBetween={20}

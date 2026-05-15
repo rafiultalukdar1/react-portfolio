@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Pagination } from "swiper/modules";
@@ -54,18 +57,26 @@ const Gallery = () => {
             liveLink: "https://rafiultalukdar1.github.io/ABC-Fitness/",
         },
     ];
+
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
     
     return (
         <>
             <div className='pt-25 sm:pt-30 md:pt-35 lg:pt-40'>
                 <div className='container'>
-                    <div className='relative'>
+                    <div className='relative' data-aos="fade-up">
                         <h2 className='font-Rajdhani uppercase text-[#2b2a2a91] text-[48px] sm:text-[65px] md:text-[75px] lg:text-[95px] font-extrabold text-center leading-0'>Projects</h2>
                         <h2 className='font-Rajdhani uppercase text-white text-[32px] sm:text-[40px] md:text-[45px] lg:text-[55px] font-bold absolute top-0 left-1/2 -translate-x-1/2 leading-0 whitespace-nowrap'>Tech <span className='text-[#FDB400]'>Works</span></h2>
                     </div>
                     <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
-                        <h2 class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">My Project Highlights!</h2>
-                        <div className='mt-6.75 sm:mt-10 md:mt-12 lg:mt-15 xl:mt-20 pb-10'>
+                        <h2 data-aos="fade-right" class="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">My Project Highlights!</h2>
+                        <div className='mt-6.75 sm:mt-10 md:mt-12 lg:mt-15 xl:mt-20 pb-10' data-aos="fade-up">
                             <Swiper
                                 modules={[EffectCoverflow, Autoplay, Pagination]}
                                 effect="coverflow"
@@ -125,7 +136,7 @@ const Gallery = () => {
                             </Swiper>
                         </div>
 
-                        <div className='mt-5 lg:mt-7.5'>
+                        <div className='mt-5 lg:mt-7.5' data-aos="fade-right">
                             <NavLink to='/projects' className='custom-btn'>View All Projects</NavLink>
                         </div>
                     </div>

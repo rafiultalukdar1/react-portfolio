@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { BsBoxArrowInUpRight } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectsItems = ( {frontData, fullstackData } ) => {
 
@@ -19,11 +21,19 @@ const ProjectsItems = ( {frontData, fullstackData } ) => {
         };
     }, [selectedProject]);
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             <div class="mt-15 sm:mt-22 md:mt-25 lg:mt-32">
                 <div className='container'>
-                    <div className="flex items-center">
+                    <div className="flex items-center" data-aos="fade-up">
                         <button onClick={() => setActiveTab("tab1")} className={`px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] transition-all duration-300 border border-[#fdb5009c] bg-[#0C0C0C] rounded-tl rounded-bl ${ activeTab === "tab1" ? "bg-primary text-black" : "text-white" }`}>Front-End</button>
                         <button onClick={() => setActiveTab("tab2")} className={`px-7 py-3 text-[12px] font-bold uppercase tracking-[1px] [word-spacing:2px] transition-all duration-300 border border-[#fdb5009c] bg-[#0C0C0C] rounded-tr rounded-br ${activeTab === "tab2" ? "bg-primary text-black" : "text-white"}`}>Full-Stack</button>
                     </div>
@@ -33,8 +43,8 @@ const ProjectsItems = ( {frontData, fullstackData } ) => {
                             <div className="animate-[fade_0.4s_ease]">
                                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-1'>
                                     {
-                                        frontData.map((project) => (
-                                            <div key={project.id} className='group min-h-55 sm:min-h-70 relative overflow-hidden'>
+                                        frontData.map((project, index) => (
+                                            <div key={project.id} data-aos="fade-up" data-aos-delay={index * 150} className='group min-h-55 sm:min-h-70 relative overflow-hidden'>
                                                 <img src={project.thumbnail} alt="" className='h-full w-full object-cover duration-700 group-hover:scale-105'/>
                                                 <div className='absolute bottom-0 left-0 w-full px-3.75 pb-3.75 pt-12.5 bg-linear-to-t from-black to-transparent duration-700'>
                                                     <h4 className='text-[18px] sm:text-[20px] font-semibold text-primary font-rajdhani'>{project.projectName}</h4>
@@ -91,8 +101,8 @@ const ProjectsItems = ( {frontData, fullstackData } ) => {
                             <div className="animate-[fade_0.4s_ease]">
                                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-1'>
                                     {
-                                        fullstackData.map((project) => (
-                                            <div key={project.id} className='group min-h-55 sm:min-h-70 relative overflow-hidden'>
+                                        fullstackData.map((project, index) => (
+                                            <div key={project.id} data-aos="fade-up" data-aos-delay={index * 150} className='group min-h-55 sm:min-h-70 relative overflow-hidden'>
                                                 <img src={project.thumbnail} alt="" className='h-full w-full object-cover duration-700 group-hover:scale-105'/>
                                                 <div className='absolute bottom-0 left-0 w-full px-3.75 pb-3.75 pt-12.5 bg-linear-to-t from-black to-transparent duration-700'>
                                                     <h4 className='text-[18px] sm:text-[20px] font-semibold text-primary font-rajdhani'>{project.projectName}</h4>

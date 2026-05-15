@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
 import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactInfo = () => {
 
@@ -36,21 +38,7 @@ const ContactInfo = () => {
             text: "LinkedIn Profile",
             link: "https://www.linkedin.com/in/rafiultalukdar/",
             icon: <FaLinkedinIn />
-        },
-        // {
-        //     id: 0.5,
-        //     label: "Facebook",
-        //     text: "Facebook Profile",
-        //     link: "https://www.facebook.com/rafiultalukdar1",
-        //     icon: <FaFacebookF />
-        // },
-        // {
-        //     id: 0.6,
-        //     label: "WhatsApp",
-        //     text: "01720229887",
-        //     link: "https://wa.me/01720229887",
-        //     icon: <FaWhatsapp />
-        // }
+        }
     ];
 
     // Customs Hover
@@ -116,31 +104,38 @@ const ContactInfo = () => {
         });
     };
 
+    //AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
 
     return (
         <>
             <div className='container'>
                 <div className='mt-15 sm:mt-22 md:mt-25 lg:mt-32'>
-                    <h2 className="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Contact Information!</h2>
+                    <h2 data-aos="fade-right" className="font-rajdhani text-white text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold capitalize">Contact Information!</h2>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 items-start'>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-5'>
                             {contact.map(item => (
                                 <div key={item.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='hover-card hover-card-small py-5.5 sm:py-8.75 px-4 sm:px-7 rounded-lg'>
-                                    <div className='flex items-center gap-5'>
+                                    <div className='flex items-center gap-5' data-aos="fade-up" data-aos-delay="100">
                                         <div className='text-[34px] text-color'>{item.icon}</div>
                                         <div className='flex flex-col gap-1'>
                                             <h4 className='text-[22px] text-white font-semibold font-rajdhani'>{item.id} {item.label}</h4>
                                             <span className='block w-10 h-0.5 rounded bg-[#FFFFFFCC]'></span>
                                         </div>
                                     </div>
-                                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-[#FFFFFFCC] hover:text-[#FDB400] transition font-titillium mt-3 block text-[16px]">{item.text}</a>
+                                    <a data-aos="fade-up" data-aos-delay="200" href={item.link} target="_blank" rel="noopener noreferrer" className="text-[#FFFFFFCC] hover:text-[#FDB400] transition font-titillium mt-3 block text-[16px]">{item.text}</a>
                                 </div>
                             ))}
                         </div>
                         <div className=''>
                             <div className='hover-card py-5 sm:py-7.5 px-3.75 sm:px-6.25 rounded-lg w-full' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                                <h2 className='text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] font-medium font-titillium text-white text-center'>Let’s Chat About Your Project</h2>
-                                <form onSubmit={sendEmail} action="" className='mt-3.75 sm:mt-5 flex flex-col gap-2.5 sm:gap-3.75'>
+                                <h2 data-aos="fade-up" data-aos-delay="100" className='text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] font-medium font-titillium text-white text-center'>Let’s Chat About Your Project</h2>
+                                <form data-aos="fade-up" data-aos-delay="200" onSubmit={sendEmail} action="" className='mt-3.75 sm:mt-5 flex flex-col gap-2.5 sm:gap-3.75'>
                                     <input name="name" type="text" placeholder="Your Full Name" className='input-class'/>
                                     <input name="email" type="email" placeholder="Email ID" className='input-class'/>
                                     <input name="subject" type="text" placeholder="Subject" className='input-class'/>
